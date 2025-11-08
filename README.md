@@ -13,7 +13,7 @@ We build our code based on the official [openpi repo](https://github.com/Physica
 ### 🌏 Environment Setup
 Before running uv commands, please make sure [uv](https://docs.astral.sh/uv/) was installed in your machine. See the [uv installation instructions](https://docs.astral.sh/uv/getting-started/installation/) to set it up.
 ```
-git clone https://github.com/swjTheDad/AdaMoE-VLA.git
+git clone --recurse-submodules https://github.com/swjTheDad/AdaMoE-VLA.git
 GIT_LFS_SKIP_SMUDGE=1 uv sync
 GIT_LFS_SKIP_SMUDGE=1 uv pip install -e .
 ```

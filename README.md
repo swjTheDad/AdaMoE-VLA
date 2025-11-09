@@ -1,4 +1,4 @@
-# Expertise Need not Monopolize: Action-Specialized Mixture of Experts for Vision-Language-Action Learning😋
+# Expertise Need Not Monopolize: Action-Specialized Mixture of Experts for Vision-Language-Action Learning😋
 
 [\[📖 Arxiv\]](https://arxiv.org/abs/2510.14300)
 [\[🌐 Website\]](https://charleshen1412.github.io/AdaMoE-VLA/)

@@ -146,35 +146,49 @@ Expertise need not monopolize: Action-Specialized Mixture of Experts for Vision-
 
 ## 🥰 Acknowledgement
 
-RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation ([link](https://robotwin-platform.github.io/doc/index.html))
-``` 
-@article{chen2025robotwin,
-  title={Robotwin 2.0: A scalable data generator and benchmark with strong domain randomization for robust bimanual robotic manipulation},
-  author={Chen, Tianxing and Chen, Zanxin and Chen, Baijun and Cai, Zijian and Liu, Yibin and Li, Zixuan and Liang, Qiwei and Lin, Xianliang and Ge, Yiheng and Gu, Zhenyu and others},
-  journal={arXiv preprint arXiv:2506.18088},
-  year={2025}
-}
-```
-Benchmarking Knowledge Transfer for Lifelong Robot Learning ([link](https://libero-project.github.io/main))
-```
-@article{liu2023libero,
-  title={LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning},
-  author={Liu, Bo and Zhu, Yifeng and Gao, Chongkai and Feng, Yihao and Liu, Qiang and Zhu, Yuke and Stone, Peter},
-  journal={arXiv preprint arXiv:2306.03310},
-  year={2023}
-}
-```
-$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control ([link](https://github.com/Physical-Intelligence/openpi))
-```
-@misc{black2024pi0visionlanguageactionflowmodel,
-      title={$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control}, 
-      author={Kevin Black and Noah Brown and Danny Driess and Adnan Esmail and Michael Equi and Chelsea Finn and Niccolo Fusai and Lachy Groom and Karol Hausman and Brian Ichter and Szymon Jakubczak and Tim Jones and Liyiming Ke and Sergey Levine and Adrian Li-Bell and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Lucy Xiaoyang Shi and James Tanner and Quan Vuong and Anna Walling and Haohuan Wang and Ury Zhilinsky},
-      year={2024},
-      eprint={2410.24164},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2410.24164}, 
-}
-```
+* RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation ([link](https://robotwin-platform.github.io/doc/index.html))
+    <details>
+    <summary>Cite RoboTwin 2.0</summary>
+
+    ```
+    @article{chen2025robotwin,
+    title={Robotwin 2.0: A scalable data generator and benchmark with strong domain randomization for robust bimanual robotic manipulation},
+    author={Chen, Tianxing and Chen, Zanxin and Chen, Baijun and Cai, Zijian and Liu, Yibin and Li, Zixuan and Liang, Qiwei and Lin, Xianliang and Ge, Yiheng and Gu, Zhenyu and others},
+    journal={arXiv preprint arXiv:2506.18088},
+    year={2025}
+    }
+    ```
+    </details>
+
+* Benchmarking Knowledge Transfer for Lifelong Robot Learning ([link](https://libero-project.github.io/main))
+    <details>
+    <summary>Cite LIBERO</summary>
+
+    ```
+    @article{liu2023libero,
+    title={LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning},
+    author={Liu, Bo and Zhu, Yifeng and Gao, Chongkai and Feng, Yihao and Liu, Qiang and Zhu, Yuke and Stone, Peter},
+    journal={arXiv preprint arXiv:2306.03310},
+    year={2023}
+    }
+    ```
+    </details>
+
+* $\pi_0$: A Vision-Language-Action Flow Model for General Robot Control ([link](https://github.com/Physical-Intelligence/openpi))
+    <details>
+    <summary>Cite Openpi$</summary>
+
+    ```
+    @misc{black2024pi0visionlanguageactionflowmodel,
+        title={$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control}, 
+        author={Kevin Black and Noah Brown and Danny Driess and Adnan Esmail and Michael Equi and Chelsea Finn and Niccolo Fusai and Lachy Groom and Karol Hausman and Brian Ichter and Szymon Jakubczak and Tim Jones and Liyiming Ke and Sergey Levine and Adrian Li-Bell and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Lucy Xiaoyang Shi and James Tanner and Quan Vuong and Anna Walling and Haohuan Wang and Ury Zhilinsky},
+        year={2024},
+        eprint={2410.24164},
+        archivePrefix={arXiv},
+        primaryClass={cs.LG},
+        url={https://arxiv.org/abs/2410.24164}, 
+    }
+    ```
+    </details>
 ## 🪪 License
 This repository is released under the MIT license. See [LICENSE](https://github.com/swjTheDad/AdaMoE-VLA/blob/main/LICENSE) for additional details.

@@ -63,7 +63,7 @@ class BaseMoEFeedForward(nn.Module):
         }
 
         if gate_scale_fn is not None:
-            gate_scales = gate_scale_fn(x_flat, gating_scores, top_k_indices, dtype)
+            gate_scales = gate_scale_fn(x_flat, gating_scores_softmax, top_k_indices, dtype)
         else:
             gate_scales = top_k_values
 
@@ -82,14 +82,17 @@ class BaseMoEFeedForward(nn.Module):
         # Down projection
         expert_output = jnp.einsum("beh, ehd -> bed", expert_hidden, self.w_expert_output.astype(dtype))
 
-        # Select top-k expert outputs
+        # Select top-k expert outputs and gate scales
         selected_outputs = jnp.take_along_axis(
             expert_output, top_k_indices[..., None], axis=1
         )  # (B*S, top_k, expert_dim)
+        selected_scales = jnp.take_along_axis(
+            gate_scales, top_k_indices, axis=1
+        )  # (B*S, top_k)
 
         # Weighted sum
-        gate_scales = gate_scales[..., None]  # (B*S, top_k, 1)
-        weighted_outputs = jnp.sum(selected_outputs * gate_scales, axis=1)  # (B*S, expert_dim)
+        selected_scales = selected_scales[..., None]  # (B*S, top_k, 1)
+        weighted_outputs = jnp.sum(selected_outputs * selected_scales, axis=1)  # (B*S, expert_dim)
 
         return weighted_outputs
 
